@@ -1,6 +1,6 @@
 # jenkins-dynamic-user-dockerfile
 
-This example creates a dynamic defined user in the Docker container, using the outerscope GID and UID from the jenkins server user.
+This example creates a defined user in the pipeline agent Docker container, using the outerscope GID and UID from the jenkins server user.
 
 With this configuration you can avoid `Permission Denied` errors when using `pip` inside pipeline agent containers with Python.
 
