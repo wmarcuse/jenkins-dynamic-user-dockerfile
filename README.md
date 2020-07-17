@@ -17,7 +17,7 @@ With this configuration you can avoid `Permission Denied` errors when using `pip
         }
         agent {
             dockerfile {
-                image 'python:3.7.5'
+                filename 'Dockerfile.build'
                 additionalBuildArgs '''\
                 --build-arg GID=$JENKINS_GROUP_ID \
                 --build-arg UID=$JENKINS_USER_ID \
@@ -39,7 +39,7 @@ With this configuration you can avoid `Permission Denied` errors when using `pip
         }
     }
     
-### Dockerfile
+### Dockerfile.build
 
     FROM python:3.8.3
     
