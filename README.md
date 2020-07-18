@@ -22,6 +22,7 @@ With this configuration you can avoid `Permission Denied` errors when using `pip
                 --build-arg GID=$JENKINS_GROUP_ID \
                 --build-arg UID=$JENKINS_USER_ID \
                 --build-arg UNAME=$JENKINS_USER_NAME \
+                '''
             }
         }
     
