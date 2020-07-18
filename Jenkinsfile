@@ -14,6 +14,7 @@ pipeline {
             --build-arg GID=$JENKINS_GROUP_ID \
             --build-arg UID=$JENKINS_USER_ID \
             --build-arg UNAME=$JENKINS_USER_NAME \
+            '''
         }
     }
 
